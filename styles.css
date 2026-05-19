@@ -297,12 +297,28 @@ h3 {
 
 .about-section {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 0.75fr 1.25fr;
   gap: 3rem;
-  align-items: start;
+  align-items: center;
 }
 
-.about-section p {
+.about-image-wrapper {
+  background: rgba(21, 27, 43, 0.82);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+.about-image {
+  width: 100%;
+  aspect-ratio: 1 / 1.15;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 6px);
+  display: block;
+}
+
+.about-content p {
   font-size: 1.05rem;
 }
 
@@ -393,5 +409,10 @@ h3 {
 
   .button {
     width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .about-section {
+    grid-template-columns: 1fr;
   }
 }
