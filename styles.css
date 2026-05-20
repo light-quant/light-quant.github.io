@@ -303,6 +303,7 @@ h3 {
 }
 
 .about-image-wrapper {
+  object-fit: cover;
   background: rgba(21, 27, 43, 0.82);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -311,6 +312,7 @@ h3 {
 }
 
 .about-image {
+  object-position: center top;
   width: 100%;
   aspect-ratio: 1 / 1.15;
   object-fit: cover;
